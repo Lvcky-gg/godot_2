@@ -30,11 +30,22 @@ position = Vector2(0, -1)
 zoom = Vector2(4, 4)
 
 [node name="crate" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(59, -53)
 gravity_scale = 0.0
 linear_damp = 3.0
 
 [node name="crate2" parent="." instance=ExtResource("3_ibq6q")]
-position = Vector2(191, 41)
+position = Vector2(161, -55)
+gravity_scale = 0.0
+linear_damp = 3.0
+
+[node name="crate28" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(161, -55)
+gravity_scale = 0.0
+linear_damp = 3.0
+
+[node name="crate29" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(161, -55)
 gravity_scale = 0.0
 linear_damp = 3.0
 
@@ -42,3 +53,121 @@ linear_damp = 3.0
 position = Vector2(117, -53)
 gravity_scale = 0.0
 linear_damp = 3.0
+
+[node name="crate4" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(20, -55)
+gravity_scale = 0.0
+
+[node name="crate5" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(-7, -56)
+
+[node name="crate6" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(84, -54)
+
+[node name="crate7" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(182, -56)
+
+[node name="crate8" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(-2, -26)
+
+[node name="crate9" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(-4, -1)
+
+[node name="crate10" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(-4, 25)
+
+[node name="crate11" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(-8, 51)
+
+[node name="crate12" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(-8, 71)
+
+[node name="crate13" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(16, 68)
+
+[node name="crate14" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(17, 48)
+
+[node name="crate15" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(18, 26)
+
+[node name="crate16" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(22, 1)
+
+[node name="crate17" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(26, -25)
+
+[node name="crate18" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(56, -25)
+
+[node name="crate19" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(51, -1)
+
+[node name="crate20" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(45, 25)
+
+[node name="crate21" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(45, 49)
+
+[node name="crate22" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(44, 70)
+
+[node name="crate23" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(84, -21)
+
+[node name="crate24" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(78, 2)
+
+[node name="crate25" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(75, 26)
+
+[node name="crate26" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(72, 51)
+
+[node name="crate27" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(74, 71)
+
+[node name="crate30" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(98, 31)
+
+[node name="crate31" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(98, 51)
+
+[node name="crate32" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(97, 71)
+
+[node name="crate33" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(123, 31)
+
+[node name="crate34" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(124, 53)
+
+[node name="crate35" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(128, 70)
+
+[node name="crate36" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(113, -28)
+
+[node name="crate37" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(146, -30)
+
+[node name="crate38" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(147, -10)
+
+[node name="crate39" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(150, 10)
+
+[node name="crate40" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(152, 32)
+
+[node name="crate41" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(154, 51)
+
+[node name="crate42" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(151, 71)
+
+[node name="crate43" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(173, -30)
+
+[node name="crate44" parent="." instance=ExtResource("3_ibq6q")]
+position = Vector2(177, -10)
