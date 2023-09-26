@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdtv4inj6uxla"
-path="res://.godot/imported/Crate.png-7b0818c11cb753b419c72b19c9b98f1a.ctex"
+path="res://.godot/imported/Crate.png-bee6eec60bdd42f4e3e7079a42fbf989.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Godot-Mini-Projects-Assets/Godot Mini-Projects - Assets/Physics Project/Crate.png"
-dest_files=["res://.godot/imported/Crate.png-7b0818c11cb753b419c72b19c9b98f1a.ctex"]
+source_file="res://physics/Crate.png"
+dest_files=["res://.godot/imported/Crate.png-bee6eec60bdd42f4e3e7079a42fbf989.ctex"]
 
 [params]
 

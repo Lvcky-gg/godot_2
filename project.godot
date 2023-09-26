@@ -14,3 +14,7 @@ config/name="project_2"
 run/main_scene="res://balloon_popper/balloon_popper.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
