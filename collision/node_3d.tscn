@@ -1,8 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://jkssfun0wktw"]
+[gd_scene load_steps=12 format=3 uid="uid://jkssfun0wktw"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_yxbt4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ljbh1"]
+size = Vector3(1, 1.1455, 0.930223)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_8yg3l"]
+friction = 0.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_xvhwx"]
 
@@ -18,18 +22,30 @@ albedo_color = Color(1, 0.0941176, 1, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_mpasx"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_cxsf1"]
+
+[sub_resource type="Environment" id="Environment_ab4ki"]
+background_mode = 1
+background_color = Color(0.372549, 0.560784, 1, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.862745, 0.862745, 0.862745, 1)
+reflected_light_source = 2
+
 [node name="Main" type="Node3D"]
 
 [node name="ground" type="StaticBody3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ground"]
+transform = Transform3D(6.97451, 0.363171, 0, -1.87625, 1.35, 0, 0, 0, 1.23393, 0, 0, 0)
 mesh = SubResource("BoxMesh_yxbt4")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ground"]
-transform = Transform3D(1.00189, 0, 0, 0, 1.00189, 0, 0, 0, 1.01473, 0, 0, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ground/MeshInstance3D"]
+transform = Transform3D(1.02233, -0.0415681, 0, -0.105403, 0.882725, 0, 0, 0, 1.2809, -0.00267587, -0.00343783, -0.0516303)
 shape = SubResource("BoxShape3D_ljbh1")
 
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(0.953496, 0.301405, 4.6551e-10, -0.301402, 0.953489, 0.00397934, 0.00119939, -0.00379428, 0.999992, -3.34732, 0.776495, 0.0314154)
+physics_material_override = SubResource("PhysicsMaterial_8yg3l")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
 transform = Transform3D(0.103106, 0, 0, 0, 0.272397, 0, 0, 0, 0.132564, 0, 1.08995, 0)
@@ -52,3 +68,16 @@ mesh = SubResource("BoxMesh_mpasx")
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="RigidBody3D"]
 transform = Transform3D(0.556222, 0, -0.000811207, 0, 0.00740683, 0, 0.00968946, 0, 0.0465672, -0.00167646, 0.951955, 0.0641516)
 mesh = SubResource("BoxMesh_mpasx")
+
+[node name="Camera3D" type="Camera3D" parent="RigidBody3D"]
+transform = Transform3D(0.191386, -0.0829755, -0.978001, -0.130859, 0.985367, -0.109209, 0.972753, 0.148882, 0.177727, -0.851879, 1.24553, 0.488327)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(0.283676, -3.2778e-07, -2.91038e-11, 6.50439e-08, 0.507519, -2.32831e-10, 3.7835e-10, 1.16415e-10, 0.220932, -0.0048008, 1.19365, 0.0059868)
+shape = SubResource("BoxShape3D_cxsf1")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.0788791, 0.484916, -0.870996, -0.0456805, 0.871042, 0.489079, 0.995837, 0.0783656, -0.0465558, -4.16782, 2.77824, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ab4ki")
